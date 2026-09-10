@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Siliguri Rentals | Buy & Sell - 1BHK, 2BHK, 3BHK, 4BHK Flats</title>
+<meta name="description" content="Siliguri Rentals - Buy and Sell. Find 1BHK, 2BHK, 3BHK, 4BHK flats & apartments on rent or sale in Siliguri. Call 8101574644" />
+<meta name="keywords" content="Siliguri Rentals, Buy Sell Siliguri, 1BHK Siliguri, 2BHK, 3BHK, 4BHK, Flat Rent, Apartment Siliguri" />
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+/* ================= RESET ================= */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+:root{
+  --primary:#0e1f3d;
+  --accent:#c9a24b;
+  --accent-dark:#a8852f;
+  --light:#f8f8f8;
+  --white:#fff;
+  --text:#222;
+  --gray:#666;
+  --shadow:0 8px 30px rgba(0,0,0,0.08);
+}
+body{background:var(--light);color:var(--text);overflow-x:hidden;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+img{max-width:100%;display:block;}
+.container{max-width:1250px;margin:0 auto;padding:0 20px;}
+
+/* ================= TOP BAR ================= */
+.topbar{background:var(--primary);color:#fff;font-size:13px;padding:8px 0;}
+.topbar-flex{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.topbar-left{display:flex;gap:20px;flex-wrap:wrap;}
+.topbar-left a{color:#fff;transition:.3s;}
+.topbar-left a:hover{color:var(--accent);}
+.topbar-left i{color:var(--accent);margin-right:5px;}
+.topbar-right a{color:#fff;margin-left:15px;font-size:14px;transition:.3s;}
+.topbar-right a:hover{color:var(--accent);}
+
+/* ================= HEADER ================= */
+.header{
+  position:sticky;top:0;z-index:999;background:#fff;
+  box-shadow:0 2px 20px rgba(0,0,0,0.06);
+  transition:.4s;
+}
+.nav-flex{display:flex;justify-content:space-between;align-items:center;padding:12px 0;gap:20px;}
+
+/* LOGO */
+.logo{display:flex;align-items:center;gap:12px;}
+.logo-img{
+  width:75px;height:75px;border-radius:50%;
+  background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 15px rgba(0,0,0,0.15);
+  overflow:hidden;border:2px solid var(--primary);
+  flex-shrink:0;
+}
+.logo-img img{width:100%;height:100%;object-fit:cover;}
+.logo-text h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;line-height:1;letter-spacing:1px;
+  color:var(--primary);font-weight:700;
+}
+.logo-text h1 span{color:var(--accent);}
+.logo-text small{
+  font-size:10px;letter-spacing:3px;
+  color:var(--gray);text-transform:uppercase;font-weight:500;
+}
+
+/* NAV */
+.navbar ul{display:flex;gap:28px;}
+.navbar a{
+  font-weight:500;font-size:15px;color:var(--primary);
+  position:relative;padding:5px 0;transition:.3s;
+}
+.navbar a::after{
+  content:'';position:absolute;bottom:-2px;left:0;
+  width:0;height:2px;background:var(--accent);transition:.3s;
+}
+.navbar a:hover::after,.navbar a.active::after{width:100%;}
+.navbar a:hover{color:var(--accent);}
+
+.nav-actions{display:flex;align-items:center;gap:12px;}
+.btn-call{
+  background:var(--primary);color:#fff;
+  padding:11px 22px;border-radius:50px;
+  font-size:14px;font-weight:600;
+  transition:.3s;white-space:nowrap;
+  box-shadow:0 4px 15px rgba(14,31,61,0.3);
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-call:hover{background:var(--accent);transform:translateY(-2px);}
+.menu-btn{display:none;font-size:24px;color:var(--primary);cursor:pointer;}
+
+/* ================= HERO (BUILDING PHOTO BG) ================= */
+.hero{
+  position:relative;
+  min-height:90vh;
+  background:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1800&q=90') center/cover no-repeat fixed;
+  display:flex;align-items:center;
+  padding:70px 0;
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(10,20,40,0.78),rgba(10,20,40,0.55));
+}
+.hero-content{position:relative;z-index:2;text-align:center;color:#fff;width:100%;}
+.hero h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:56px;line-height:1.15;font-weight:700;
+  max-width:950px;margin:0 auto 20px;
+  text-shadow:0 2px 20px rgba(0,0,0,0.4);
+}
+.hero h2 span{color:var(--accent);}
+.hero p{font-size:18px;max-width:720px;margin:0 auto 45px;opacity:.95;line-height:1.7;}
+
+/* SEARCH BOX */
+.search-box{
+  background:#fff;border-radius:16px;
+  padding:22px;display:grid;
+  grid-template-columns:repeat(4,1fr) auto;
+  gap:14px;max-width:1100px;margin:0 auto 50px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.35);
+}
+.search-field{text-align:left;}
+.search-field label{
+  display:block;font-size:12px;
+  color:var(--primary);font-weight:600;
+  margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px;
+}
+.search-field label i{color:var(--accent);margin-right:4px;}
+.search-field select,.search-field input{
+  width:100%;padding:11px 12px;
+  border:1.5px solid #e3e3e3;border-radius:8px;
+  font-size:14px;color:var(--text);
+  background:#fafafa;outline:none;transition:.3s;
+  font-family:'Poppins',sans-serif;
+}
+.search-field select:focus,.search-field input:focus{border-color:var(--accent);background:#fff;}
+.btn-search{
+  align-self:end;background:var(--accent);color:#fff;
+  border:none;padding:12px 26px;border-radius:8px;
+  font-size:15px;font-weight:600;cursor:pointer;
+  transition:.3s;height:44px;font-family:'Poppins',sans-serif;
+}
+.btn-search:hover{background:var(--primary);}
+.btn-search i{margin-right:6px;}
+
+/* HERO STATS */
+.hero-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:20px;max-width:900px;margin:0 auto;
+}
+.hero-stats div{
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:12px;padding:20px 10px;transition:.3s;
+}
+.hero-stats div:hover{transform:translateY(-5px);background:rgba(201,162,75,0.25);}
+.hero-stats h3{font-size:30px;color:var(--accent);font-family:'Cormorant Garamond',serif;font-weight:700;}
+.hero-stats p{font-size:13px;opacity:.9;margin:0;}
+
+/* ================= SECTION TITLES ================= */
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:44px;text-align:center;color:var(--primary);
+  font-weight:700;margin-bottom:10px;line-height:1.2;
+}
+.section-title span{color:var(--accent);}
+.section-sub{text-align:center;color:var(--gray);margin-bottom:50px;font-size:15px;}
+
+/* ================= CATEGORIES ================= */
+.categories{padding:90px 0;background:#fff;}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;}
+.cat-card{
+  background:var(--light);border-radius:16px;
+  padding:38px 20px;text-align:center;cursor:pointer;
+  transition:.4s;border:2px solid transparent;
+  position:relative;overflow:hidden;
+}
+.cat-card::before{
+  content:'';position:absolute;top:0;left:-100%;
+  width:100%;height:100%;
+  background:linear-gradient(135deg,var(--primary),#1e3a6e);
+  transition:.4s;z-index:0;
+}
+.cat-card:hover::before{left:0;}
+.cat-card > *{position:relative;z-index:1;transition:.4s;}
+.cat-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);}
+.cat-card:hover h3,.cat-card:hover p{color:#fff;}
+.cat-card:hover i{color:var(--accent);transform:scale(1.15);}
+.cat-card i{font-size:42px;color:var(--primary);margin-bottom:18px;display:block;}
+.cat-card h3{font-size:22px;color:var(--primary);margin-bottom:6px;font-weight:600;}
+.cat-card p{font-size:14px;color:var(--gray);}
+
+/* ================= PROPERTIES ================= */
+.properties{padding:90px 0;background:var(--light);}
+.filter-tabs{
+  display:flex;justify-content:center;
+  flex-wrap:wrap;gap:10px;margin-bottom:45px;
+}
+.tab{
+  padding:10px 22px;border-radius:50px;
+  border:1.5px solid #ddd;background:#fff;
+  cursor:pointer;font-size:14px;
+  color:var(--primary);font-weight:500;
+  transition:.3s;font-family:'Poppins',sans-serif;
+}
+.tab.active,.tab:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
+
+.property-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.property-card{
+  background:#fff;border-radius:16px;
+  overflow:hidden;box-shadow:var(--shadow);
+  transition:.4s;animation:fadeUp .6s ease both;
+}
+.property-card:hover{transform:translateY(-8px);box-shadow:0 20px 45px rgba(0,0,0,0.15);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+.prop-img{
+  height:220px;position:relative;overflow:hidden;
+  background-size:cover;background-position:center;
+}
+.prop-img::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,0.5),transparent 60%);
+}
+.prop-tag{
+  position:absolute;top:14px;left:14px;
+  background:var(--accent);color:#fff;
+  padding:5px 14px;border-radius:50px;
+  font-size:12px;font-weight:600;z-index:2;
+}
+.prop-price{
+  position:absolute;bottom:14px;right:14px;
+  background:#fff;color:var(--primary);
+  padding:6px 14px;border-radius:8px;
+  font-weight:700;font-size:15px;z-index:2;
+}
+.prop-body{padding:22px;}
+.prop-body h3{font-size:19px;color:var(--primary);margin-bottom:6px;font-weight:600;}
+.prop-loc{color:var(--gray);font-size:13px;margin-bottom:14px;}
+.prop-loc i{color:var(--accent);margin-right:4px;}
+.prop-features{
+  display:flex;gap:16px;flex-wrap:wrap;
+  padding:14px 0;border-top:1px solid #eee;
+  border-bottom:1px solid #eee;margin-bottom:16px;
+}
+.prop-features span{font-size:13px;color:var(--gray);}
+.prop-features i{color:var(--accent);margin-right:4px;}
+.prop-actions{display:flex;gap:10px;}
+.btn-view,.btn-book{
+  flex:1;text-align:center;padding:10px;
+  border-radius:8px;font-size:13px;
+  font-weight:600;cursor:pointer;transition:.3s;
+  border:none;font-family:'Poppins',sans-serif;
+}
+.btn-view{background:var(--light);color:var(--primary);}
+.btn-view:hover{background:var(--primary);color:#fff;}
+.btn-book{background:var(--accent);color:#fff;}
+.btn-book:hover{background:var(--primary);}
+
+.load-more-wrap{text-align:center;margin-top:45px;}
+.btn-load-more{
+  background:transparent;border:2px solid var(--primary);
+  color:var(--primary);padding:13px 32px;border-radius:50px;
+  font-size:14px;font-weight:600;cursor:pointer;
+  transition:.3s;font-family:'Poppins',sans-serif;
+}
+.btn-load-more:hover{background:var(--primary);color:#fff;}
+.btn-load-more i{margin-left:8px;}
+
+/* ================= SERVICES ================= */
+.services{padding:90px 0;background:#fff;}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;}
+.service-card{
+  text-align:center;padding:38px 22px;
+  border-radius:16px;background:var(--light);
+  transition:.4s;border-bottom:3px solid transparent;
+}
+.service-card:hover{
+  background:#fff;box-shadow:var(--shadow);
+  transform:translateY(-6px);border-bottom-color:var(--accent);
+}
+.service-card i{
+  width:70px;height:70px;line-height:70px;
+  background:linear-gradient(135deg,var(--primary),#1e3a6e);
+  color:var(--accent);font-size:28px;
+  border-radius:50%;margin-bottom:20px;
+  display:inline-block;transition:.4s;
+}
+.service-card:hover i{transform:rotateY(360deg);}
+.service-card h3{font-size:18px;color:var(--primary);margin-bottom:8px;}
+.service-card p{font-size:14px;color:var(--gray);line-height:1.6;}
+
+/* ================= APPOINTMENT ================= */
+.appointment{
+  padding:90px 0;
+  background:linear-gradient(135deg,var(--primary),#1e3a6e);
+  position:relative;overflow:hidden;
+}
+.appointment::before{
+  content:'';position:absolute;top:-100px;right:-100px;
+  width:400px;height:400px;border-radius:50%;
+  background:rgba(201,162,75,0.1);
+}
+.appointment .section-title{color:#fff;}
+.appointment .section-sub{color:rgba(255,255,255,0.75);}
+.appt-wrap{
+  display:grid;grid-template-columns:1fr 1.2fr;
+  gap:50px;align-items:center;position:relative;z-index:2;
+}
+.appt-info{color:#fff;}
+.appt-info h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:34px;margin-bottom:16px;line-height:1.2;
+}
+.appt-info h3 span{color:var(--accent);}
+.appt-info p{opacity:.85;margin-bottom:25px;line-height:1.7;}
+.appt-points li{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:14px;font-size:15px;
+}
+.appt-points i{
+  width:36px;height:36px;line-height:36px;
+  background:rgba(201,162,75,0.2);color:var(--accent);
+  border-radius:50%;text-align:center;flex-shrink:0;
+}
+.appt-form{
+  background:#fff;padding:38px;
+  border-radius:18px;box-shadow:0 25px 60px rgba(0,0,0,0.3);
+}
+.appt-form h3{
+  color:var(--primary);font-size:22px;
+  margin-bottom:22px;text-align:center;
+  font-family:'Cormorant Garamond',serif;
+}
+.form-group{margin-bottom:16px;}
+.form-group label{
+  display:block;font-size:13px;
+  color:var(--primary);font-weight:600;
+  margin-bottom:6px;
+}
+.form-group input,.form-group select,.form-group textarea{
+  width:100%;padding:12px 14px;
+  border:1.5px solid #e3e3e3;border-radius:8px;
+  font-size:14px;font-family:'Poppins',sans-serif;
+  background:#fafafa;outline:none;transition:.3s;
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+  border-color:var(--accent);background:#fff;
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.btn-submit{
+  width:100%;background:var(--accent);color:#fff;
+  border:none;padding:14px;border-radius:8px;
+  font-size:16px;font-weight:600;cursor:pointer;
+  transition:.3s;font-family:'Poppins',sans-serif;margin-top:8px;
+}
+.btn-submit:hover{background:var(--primary);transform:translateY(-2px);}
+.btn-submit i{margin-right:8px;}
+
+/* ================= WHY US ================= */
+.why{padding:90px 0;background:var(--light);}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}
+.why-card{
+  background:#fff;padding:36px;border-radius:16px;
+  box-shadow:var(--shadow);transition:.4s;text-align:center;
+}
+.why-card:hover{transform:translateY(-6px);}
+.why-card i{font-size:40px;color:var(--accent);margin-bottom:18px;}
+.why-card h3{font-size:18px;color:var(--primary);margin-bottom:8px;}
+.why-card p{font-size:14px;color:var(--gray);line-height:1.6;}
+
+/* ================= TESTIMONIALS ================= */
+.testimonials{padding:90px 0;background:#fff;}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}
+.test-card{
+  background:var(--light);padding:30px;border-radius:16px;
+  transition:.4s;position:relative;
+}
+.test-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
+.test-card::before{
+  content:'\201C';position:absolute;top:15px;right:22px;
+  font-size:70px;color:var(--accent);opacity:.25;
+  font-family:'Cormorant Garamond',serif;line-height:1;
+}
+.test-stars{color:var(--accent);margin-bottom:14px;font-size:14px;}
+.test-card p{font-size:14px;color:var(--gray);line-height:1.7;margin-bottom:18px;font-style:italic;}
+.test-user{display:flex;align-items:center;gap:12px;}
+.test-user div:first-child{
+  width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),#1e3a6e);
+  color:var(--accent);font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;
+}
+.test-user h4{font-size:15px;color:var(--primary);}
+.test-user small{font-size:12px;color:var(--gray);}
+
+/* ================= CTA ================= */
+.cta{
+  padding:70px 0;
+  background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+  text-align:center;color:#fff;
+}
+.cta h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:40px;margin-bottom:12px;
+}
+.cta p{font-size:16px;opacity:.95;margin-bottom:28px;}
+.cta-btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+.cta-btn{
+  padding:14px 32px;border-radius:50px;
+  font-size:15px;font-weight:600;
+  transition:.3s;display:inline-flex;
+  align-items:center;gap:8px;
+}
+.cta-btn.primary{background:var(--primary);color:#fff;}
+.cta-btn.primary:hover{background:#fff;color:var(--primary);transform:translateY(-3px);}
+.cta-btn.whatsapp{background:#25D366;color:#fff;}
+.cta-btn.whatsapp:hover{background:#1da851;transform:translateY(-3px);}
+
+/* ================= FOOTER ================= */
+footer{background:var(--primary);color:#fff;padding:60px 0 0;}
+.footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;
+  gap:40px;padding-bottom:40px;
+}
+.footer-logo{display:flex;align-items:center;gap:14px;margin-bottom:18px;}
+.footer-logo .logo-img{width:70px;height:70px;border:2px solid var(--accent);}
+.footer-logo h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;color:#fff;
+}
+.footer-logo h3 span{color:var(--accent);}
+.footer-logo small{font-size:10px;letter-spacing:3px;color:#aaa;text-transform:uppercase;}
+.footer-col p{font-size:14px;color:#bbb;line-height:1.7;margin-bottom:18px;}
+.footer-col h4{
+  font-size:16px;margin-bottom:20px;color:#fff;
+  position:relative;padding-bottom:10px;
+}
+.footer-col h4::after{
+  content:'';position:absolute;bottom:0;left:0;
+  width:40px;height:2px;background:var(--accent);
+}
+.footer-col ul li{margin-bottom:10px;}
+.footer-col ul a{font-size:14px;color:#bbb;transition:.3s;}
+.footer-col ul a:hover{color:var(--accent);padding-left:5px;}
+.footer-col ul i{color:var(--accent);margin-right:8px;font-size:12px;}
+.footer-contact li{display:flex;gap:12px;margin-bottom:14px;font-size:14px;color:#bbb;}
+.footer-contact i{color:var(--accent);margin-top:3px;}
+.footer-contact a{color:#bbb;}
+.footer-contact a:hover{color:var(--accent);}
+.footer-social{display:flex;gap:12px;margin-top:16px;}
+.footer-social a{
+  width:38px;height:38px;line-height:38px;
+  text-align:center;background:rgba(255,255,255,0.08);
+  border-radius:50%;color:#fff;transition:.3s;
+}
+.footer-social a:hover{background:var(--accent);transform:translateY(-3px);}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.1);
+  padding:20px 0;text-align:center;
+  font-size:13px;color:#888;
+}
+.footer-bottom span{color:var(--accent);}
+
+/* ================= WHATSAPP FLOAT ================= */
+.whatsapp-float{
+  position:fixed;bottom:25px;right:25px;
+  width:60px;height:60px;background:#25D366;
+  color:#fff;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:30px;z-index:1000;
+  box-shadow:0 6px 20px rgba(37,211,102,0.4);
+  animation:pulse 2s infinite;transition:.3s;
+}
+.whatsapp-float:hover{transform:scale(1.1);}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7);}
+  70%{box-shadow:0 0 0 18px rgba(37,211,102,0);}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+}
+
+/* SCROLL TOP */
+.scroll-top{
+  position:fixed;bottom:100px;right:25px;
+  width:46px;height:46px;background:var(--primary);
+  color:#fff;border-radius:50%;border:none;
+  font-size:18px;cursor:pointer;
+  display:none;align-items:center;justify-content:center;
+  z-index:999;transition:.3s;
+}
+.scroll-top:hover{background:var(--accent);}
+.scroll-top.show{display:flex;}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:1024px){
+  .search-box{grid-template-columns:repeat(2,1fr);}
+  .btn-search{grid-column:span 2;}
+  .property-grid,.services-grid,.cat-grid{grid-template-columns:repeat(2,1fr);}
+  .why-grid,.test-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px;}
+  .hero h2{font-size:42px;}
+  .hero{background-attachment:scroll;}
+  .appt-wrap{grid-template-columns:1fr;}
+}
+@media(max-width:768px){
+  .menu-btn{display:block;}
+  .navbar{
+    position:absolute;top:100%;left:0;width:100%;
+    background:#fff;box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    max-height:0;overflow:hidden;transition:.4s;
+  }
+  .navbar.active{max-height:500px;padding:20px 0;}
+  .navbar ul{flex-direction:column;gap:0;padding:0 20px;}
+  .navbar ul li{border-bottom:1px solid #eee;}
+  .navbar a{display:block;padding:14px 0;}
+  .navbar a::after{display:none;}
+  .logo-img{width:60px;height:60px;}
+  .logo-text h1{font-size:17px;}
+  .logo-text small{font-size:8px;letter-spacing:2px;}
+  .btn-call{padding:9px 15px;font-size:12px;}
+  .btn-call span{display:none;}
+  .hero{min-height:auto;padding:50px 0;background-attachment:scroll;}
+  .hero h2{font-size:30px;}
+  .hero p{font-size:15px;margin-bottom:30px;}
+  .section-title{font-size:32px;}
+  .search-box{grid-template-columns:1fr;padding:18px;gap:12px;}
+  .btn-search{grid-column:span 1;}
+  .hero-stats{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .hero-stats h3{font-size:24px;}
+  .cat-grid,.property-grid,.services-grid,.why-grid,.test-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .appt-form{padding:25px;}
+  .appt-info h3{font-size:26px;}
+  .footer-grid{grid-template-columns:1fr;gap:30px;}
+  .cta h2{font-size:28px;}
+  .topbar-left span:nth-child(2){display:none;}
+  .topbar{font-size:11px;}
+  .whatsapp-float{width:54px;height:54px;font-size:26px;bottom:20px;right:20px;}
+  .scroll-top{bottom:85px;right:20px;width:42px;height:42px;}
+  .categories,.properties,.services,.why,.testimonials,.appointment{padding:60px 0;}
+  .section-sub{margin-bottom:35px;}
+}
+@media(max-width:480px){
+  .hero h2{font-size:26px;}
+  .hero p{font-size:14px;}
+  .hero-stats h3{font-size:20px;}
+  .hero-stats p{font-size:11px;}
+  .logo-text h1{font-size:15px;}
+  .logo-text small{font-size:7px;letter-spacing:1.5px;}
+  .section-title{font-size:26px;}
+  .cta h2{font-size:22px;}
+  .cta-btn{padding:12px 22px;font-size:14px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="topbar">
+  <div class="container topbar-flex">
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-phone"></i> <a href="tel:8101574644">+91 81015 74644</a></span>
+      <span><i class="fa-solid fa-location-dot"></i> Siliguri, West Bengal</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/918101574644"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="container nav-flex">
+    <!-- LOGO -->
+    <a href="#home" class="logo">
+      <div class="logo-img">
+        <img src="https://i.ibb.co/6y2Z6Xk/siliguri-rentals-logo.png" 
+             alt="Siliguri Rentals Logo"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'font-family:Cormorant Garamond;font-size:26px;color:#0e1f3d;font-weight:700\'>SR</span>';" />
+      </div>
+      <div class="logo-text">
+        <h1>SILIGURI <span>RENTALS</span></h1>
+        <small>Buy & Sell</small>
+      </div>
+    </a>
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#appointment">Book Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ACTIONS -->
+    <div class="nav-actions">
+      <a href="tel:8101574644" class="btn-call">
+        <i class="fa-solid fa-phone-volume"></i> <span>Call Now</span>
+      </a>
+      <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO (BUILDING BG) ================= -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h2>Find Your Perfect <span>1BHK • 2BHK • 3BHK • 4BHK</span> Home in Siliguri</h2>
+    <p>Buy ya Sell — Verified Flats, Apartments & Houses. Book Appointment Online in Seconds.</p>
+
+    <!-- SEARCH -->
+    <div class="search-box">
+      <div class="search-field">
+        <label><i class="fa-solid fa-building"></i> Type</label>
+        <select id="searchType">
+          <option value="">All Types</option>
+          <option>1 BHK</option>
+          <option>2 BHK</option>
+          <option>3 BHK</option>
+          <option>4 BHK</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label><i class="fa-solid fa-tag"></i> For</label>
+        <select id="searchFor">
+          <option value="">Rent / Sale</option>
+          <option>Rent</option>
+          <option>Sale</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label><i class="fa-solid fa-location-dot"></i> Location</label>
+        <input type="text" id="searchLocation" placeholder="Sevoke Road, Pradhan Nagar..." />
+      </div>
+      <div class="search-field">
+        <label><i class="fa-solid fa-indian-rupee-sign"></i> Budget</label>
+        <select id="searchBudget">
+          <option value="">Any Budget</option>
+          <option>Below ₹10,000</option>
+          <option>₹10,000 - ₹20,000</option>
+          <option>₹20,000 - ₹40,000</option>
+          <option>₹40,000+</option>
+        </select>
+      </div>
+      <button class="btn-search" onclick="searchProperties()">
+        <i class="fa-solid fa-magnifying-glass"></i> Search
+      </button>
+    </div>
+
+    <div class="hero-stats">
+      <div><h3>500+</h3><p>Properties</p></div>
+      <div><h3>1200+</h3><p>Happy Clients</p></div>
+      <div><h3>10+</h3><p>Years Experience</p></div>
+      <div><h3>4.9★</h3><p>Google Rating</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="categories">
+  <div class="container">
+    <h2 class="section-title">Browse by <span>BHK Type</span></h2>
+    <p class="section-sub">Choose your perfect space — from cozy 1BHK to spacious 4BHK</p>
+    <div class="cat-grid">
+      <div class="cat-card" onclick="filterCategory('1 BHK')">
+        <i class="fa-solid fa-house"></i><h3>1 BHK</h3><p>Starting ₹6,000/mo</p>
+      </div>
+      <div class="cat-card" onclick="filterCategory('2 BHK')">
+        <i class="fa-solid fa-house-chimney"></i><h3>2 BHK</h3><p>Starting ₹10,000/mo</p>
+      </div>
+      <div class="cat-card" onclick="filterCategory('3 BHK')">
+        <i class="fa-solid fa-building"></i><h3>3 BHK</h3><p>Starting ₹15,000/mo</p>
+      </div>
+      <div class="cat-card" onclick="filterCategory('4 BHK')">
+        <i class="fa-solid fa-hotel"></i><h3>4 BHK</h3><p>Starting ₹25,000/mo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROPERTIES ================= -->
+<section class="properties" id="properties">
+  <div class="container">
+    <h2 class="section-title">Featured <span>Properties</span></h2>
+    <p class="section-sub">Handpicked verified homes in Siliguri</p>
+
+    <div class="filter-tabs" id="filterTabs">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="1 BHK">1 BHK</button>
+      <button class="tab" data-filter="2 BHK">2 BHK</button>
+      <button class="tab" data-filter="3 BHK">3 BHK</button>
+      <button class="tab" data-filter="4 BHK">4 BHK</button>
+      <button class="tab" data-filter="Rent">For Rent</button>
+      <button class="tab" data-filter="Sale">For Sale</button>
+    </div>
+
+    <div class="property-grid" id="propertyGrid"></div>
+
+    <div class="load-more-wrap">
+      <button class="btn-load-more" onclick="loadMore()">Load More Properties <i class="fa-solid fa-arrow-down"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title">Our <span>Services</span></h2>
+    <p class="section-sub">Everything you need for renting & buying in Siliguri</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-house-circle-check"></i>
+        <h3>Flat on Rent</h3>
+        <p>Verified 1BHK, 2BHK, 3BHK, 4BHK flats across Siliguri with best prices.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <h3>Buy & Sell</h3>
+        <p>Buy your dream home or sell your property with trusted legal guidance.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-calendar-check"></i>
+        <h3>Book Appointment</h3>
+        <p>Schedule a visit online and we'll show you properties at your convenience.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-file-shield"></i>
+        <h3>Legal Documentation</h3>
+        <p>Complete paperwork support — agreement, registry, and verification.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPOINTMENT ================= -->
+<section class="appointment" id="appointment">
+  <div class="container">
+    <h2 class="section-title">Book Your <span>Appointment</span></h2>
+    <p class="section-sub">Fill the form and our team will call you within 30 minutes</p>
+
+    <div class="appt-wrap">
+      <div class="appt-info">
+        <h3>Visit Properties at <span>Your Convenience</span></h3>
+        <p>Whether you want to <b>Rent</b> or <b>Buy</b>, our expert team will show you the best matching properties in Siliguri — completely free of cost!</p>
+        <ul class="appt-points">
+          <li><i class="fa-solid fa-check"></i> Free property visit & consultation</li>
+          <li><i class="fa-solid fa-check"></i> 100% verified & genuine listings</li>
+          <li><i class="fa-solid fa-check"></i> Flexible morning / evening slots</li>
+          <li><i class="fa-solid fa-check"></i> Zero brokerage on selected deals</li>
+        </ul>
+      </div>
+
+      <form class="appt-form" onsubmit="submitAppointment(event)">
+        <h3>📅 Appointment Form</h3>
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" id="appName" placeholder="Enter your name" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Mobile Number *</label>
+            <input type="tel" id="appPhone" placeholder="10-digit mobile" pattern="[0-9]{10}" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="appEmail" placeholder="you@email.com" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>BHK Type *</label>
+            <select id="appBhk" required>
+              <option value="">Select BHK</option>
+              <option>1 BHK</option>
+              <option>2 BHK</option>
+              <option>3 BHK</option>
+              <option>4 BHK</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Purpose *</label>
+            <select id="appPurpose" required>
+              <option value="">Select</option>
+              <option>Rent</option>
+              <option>Buy</option>
+              <option>Sell</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date" id="appDate" />
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <select id="appTime">
+              <option>Morning (10AM - 1PM)</option>
+              <option>Afternoon (1PM - 4PM)</option>
+              <option>Evening (4PM - 7PM)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message / Location Preference</label>
+          <textarea id="appMsg" rows="3" placeholder="e.g. Looking for 2BHK near Sevoke Road..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <i class="fa-solid fa-paper-plane"></i> Book Appointment
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="why">
+  <div class="container">
+    <h2 class="section-title">Why Choose <span>Us?</span></h2>
+    <p class="section-sub">Siliguri's most trusted rental & property partner</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>100% Verified</h3>
+        <p>Every property is personally visited and verified by our team before listing.</p>
+      </div>
+      <div class="why-card">
+        <i class="fa-solid fa-tags"></i>
+        <h3>Best Prices</h3>
+        <p>No hidden charges. Direct owner deals with transparent pricing always.</p>
+      </div>
+      <div class="why-card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p>Our team is always available on call and WhatsApp for any query.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Our <span>Clients Say</span></h2>
+    <p class="section-sub">Real reviews from happy families in Siliguri</p>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"Bahut acha experience raha! 2BHK flat mila Sevoke Road pe, budget mein aur verified bhi. Highly recommended!"</p>
+        <div class="test-user">
+          <div>R</div>
+          <div><h4>Rahul Sharma</h4><small>Siliguri</small></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"Team bahut helpful hai. 3BHK apartment 2 din mein book karwa diya. Process smooth tha. Thank you!"</p>
+        <div class="test-user">
+          <div>P</div>
+          <div><h4>Priya Das</h4><small>Pradhan Nagar</small></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"Genuine listings, no fake photos. Bhai log bahut imaandar hai. Sale ke liye bhi best service."</p>
+        <div class="test-user">
+          <div>A</div>
+          <div><h4>Amit Roy</h4><small>Matigara</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to Find Your Dream Home?</h2>
+    <p>Call us now or WhatsApp — we'll find the perfect property for you!</p>
+    <div class="cta-btns">
+      <a href="tel:8101574644" class="cta-btn primary">
+        <i class="fa-solid fa-phone"></i> Call: 81015 74644
+      </a>
+      <a href="https://wa.me/918101574644?text=Hi%20Siliguri%20Rentals,%20mujhe%20property%20chahiye" 
+         target="_blank" class="cta-btn whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <div class="logo-img">
+            <img src="https://i.ibb.co/6y2Z6Xk/siliguri-rentals-logo.png" 
+                 alt="Siliguri Rentals"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'font-family:Cormorant Garamond;font-size:24px;color:#c9a24b;font-weight:700\'>SR</span>';" />
+          </div>
+          <div>
+            <h3>SILIGURI <span>RENTALS</span></h3>
+            <small>Buy & Sell</small>
+          </div>
+        </div>
+        <p>Siliguri's most trusted rental & property platform. Find verified 1BHK, 2BHK, 3BHK, 4BHK flats for rent or buy — with 100% genuine listings.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/918101574644"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="#properties"><i class="fa-solid fa-angle-right"></i> Properties</a></li>
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+          <li><a href="#appointment"><i class="fa-solid fa-angle-right"></i> Appointment</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Property Types</h4>
+        <ul>
+          <li><a href="#properties"><i class="fa-solid fa-angle-right"></i> 1 BHK Flats</a></li>
+          <li><a href="#properties"><i class="fa-solid fa-angle-right"></i> 2 BHK Flats</a></li>
+          <li><a href="#properties"><i class="fa-solid fa-angle-right"></i> 3 BHK Flats</a></li>
+          <li><a href="#properties"><i class="fa-solid fa-angle-right"></i> 4 BHK Flats</a></li>
+          <li><a href="#properties"><i class="fa-solid fa-angle-right"></i> Buy & Sell</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:8101574644">+91 81015 74644</a></li>
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/918101574644">WhatsApp Chat</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@siligurirentals.com">info@siligurirentals.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Siliguri, West Bengal, India</li>
+          <li><i class="fa-solid fa-clock"></i> Mon-Sun: 9AM - 8PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 <span>Siliguri Rentals</span> — Buy & Sell. All Rights Reserved. | Designed with ❤️ for Siliguri
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+<a href="https://wa.me/918101574644?text=Hi,%20mujhe%20property%20ke%20baare%20mein%20jaanna%20hai" 
+   class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+/* ========= PROPERTY DATA ========= */
+const propertiesData = [
+  {type:"2 BHK",for:"Rent",title:"Modern 2BHK Flat",loc:"Sevoke Road, Siliguri",price:"₹12,000/mo",beds:2,baths:2,area:"950 sqft",img:"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"},
+  {type:"3 BHK",for:"Sale",title:"Luxury 3BHK Apartment",loc:"Pradhan Nagar, Siliguri",price:"₹45,00,000",beds:3,baths:2,area:"1350 sqft",img:"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"},
+  {type:"1 BHK",for:"Rent",title:"Cozy 1BHK Studio",loc:"Matigara, Siliguri",price:"₹7,500/mo",beds:1,baths:1,area:"550 sqft",img:"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"},
+  {type:"4 BHK",for:"Sale",title:"Premium 4BHK Villa",loc:"Uttorayon, Siliguri",price:"₹85,00,000",beds:4,baths:4,area:"2200 sqft",img:"https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80"},
+  {type:"2 BHK",for:"Rent",title:"Spacious 2BHK with Balcony",loc:"Hakim Para, Siliguri",price:"₹11,000/mo",beds:2,baths:2,area:"900 sqft",img:"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"},
+  {type:"3 BHK",for:"Rent",title:"Furnished 3BHK Flat",loc:"Ashrampara, Siliguri",price:"₹18,000/mo",beds:3,baths:3,area:"1400 sqft",img:"https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"},
+  {type:"1 BHK",for:"Rent",title:"Budget 1BHK Flat",loc:"Bhakti Nagar, Siliguri",price:"₹6,500/mo",beds:1,baths:1,area:"480 sqft",img:"https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80"},
+  {type:"4 BHK",for:"Rent",title:"Grand 4BHK Penthouse",loc:"Salugara, Siliguri",price:"₹35,000/mo",beds:4,baths:4,area:"2000 sqft",img:"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"},
+  {type:"2 BHK",for:"Sale",title:"Affordable 2BHK",loc:"Shaktigarh, Siliguri",price:"₹28,00,000",beds:2,baths:2,area:"880 sqft",img:"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80"}
+];
+
+let visibleCount = 6;
+let currentFilter = "all";
+
+/* ========= RENDER PROPERTIES ========= */
+function renderProperties(){
+  const grid = document.getElementById("propertyGrid");
+  grid.innerHTML = "";
+  let filtered = currentFilter === "all" 
+    ? propertiesData 
+    : propertiesData.filter(p => p.type === currentFilter || p.for === currentFilter);
+  
+  filtered.slice(0, visibleCount).forEach((p, i) => {
+    const card = document.createElement("div");
+    card.className = "property-card";
+    card.style.animationDelay = (i * 0.08) + "s";
+    card.innerHTML = `
+      <div class="prop-img" style="background-image:url('${p.img}')">
+        <span class="prop-tag">For ${p.for}</span>
+        <span class="prop-price">${p.price}</span>
+      </div>
+      <div class="prop-body">
+        <h3>${p.title}</h3>
+        <p class="prop-loc"><i class="fa-solid fa-location-dot"></i> ${p.loc}</p>
+        <div class="prop-features">
+          <span><i class="fa-solid fa-bed"></i> ${p.beds} Beds</span>
+          <span><i class="fa-solid fa-bath"></i> ${p.baths} Baths</span>
+          <span><i class="fa-solid fa-ruler-combined"></i> ${p.area}</span>
+        </div>
+        <div class="prop-actions">
+          <button class="btn-view" onclick="viewProperty('${p.title}')">View Details</button>
+          <button class="btn-book" onclick="bookNow('${p.title}')">Book Visit</button>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  document.querySelector(".btn-load-more").style.display = 
+    visibleCount >= filtered.length ? "none" : "inline-block";
+}
+
+/* ========= LOAD MORE ========= */
+function loadMore(){
+  visibleCount += 3;
+  renderProperties();
+}
+
+/* ========= FILTER TABS ========= */
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    currentFilter = tab.dataset.filter;
+    visibleCount = 6;
+    renderProperties();
+  });
+});
+
+/* ========= CATEGORY CLICK ========= */
+function filterCategory(cat){
+  document.querySelectorAll(".tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.filter === cat);
+  });
+  currentFilter = cat;
+  visibleCount = 6;
+  renderProperties();
+  document.getElementById("properties").scrollIntoView({behavior:"smooth"});
+}
+
+/* ========= SEARCH ========= */
+function searchProperties(){
+  const type = document.getElementById("searchType").value;
+  const forr = document.getElementById("searchFor").value;
+  const loc = document.getElementById("searchLocation").value.toLowerCase();
+  
+  let filtered = propertiesData.filter(p => {
+    return (!type || p.type === type) &&
+           (!forr || p.for === forr) &&
+           (!loc || p.loc.toLowerCase().includes(loc));
+  });
+
+  const grid = document.getElementById("propertyGrid");
+  grid.innerHTML = "";
+  if(filtered.length === 0){
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:#666;font-size:16px;">
+      <i class="fa-solid fa-magnifying-glass" style="font-size:40px;color:#c9a24b;margin-bottom:15px;display:block"></i>
+      Koi property nahi mili. Please call <b>8101574644</b> for help.
+    </div>`;
+    return;
+  }
+  filtered.forEach((p, i) => {
+    const card = document.createElement("div");
+    card.className = "property-card";
+    card.style.animationDelay = (i * 0.08) + "s";
+    card.innerHTML = `
+      <div class="prop-img" style="background-image:url('${p.img}')">
+        <span class="prop-tag">For ${p.for}</span>
+        <span class="prop-price">${p.price}</span>
+      </div>
+      <div class="prop-body">
+        <h3>${p.title}</h3>
+        <p class="prop-loc"><i class="fa-solid fa-location-dot"></i> ${p.loc}</p>
+        <div class="prop-features">
+          <span><i class="fa-solid fa-bed"></i> ${p.beds} Beds</span>
+          <span><i class="fa-solid fa-bath"></i> ${p.baths} Baths</span>
+          <span><i class="fa-solid fa-ruler-combined"></i> ${p.area}</span>
+        </div>
+        <div class="prop-actions">
+          <button class="btn-view" onclick="viewProperty('${p.title}')">View Details</button>
+          <button class="btn-book" onclick="bookNow('${p.title}')">Book Visit</button>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+  document.getElementById("properties").scrollIntoView({behavior:"smooth"});
+}
+
+/* ========= BOOK NOW ========= */
+function bookNow(title){
+  document.getElementById("appMsg").value = "Interested in: " + title;
+  document.getElementById("appointment").scrollIntoView({behavior:"smooth"});
+  setTimeout(() => document.getElementById("appName").focus(), 800);
+}
+
+/* ========= VIEW PROPERTY ========= */
+function viewProperty(title){
+  alert("📞 " + title + "\n\nFull details ke liye call karein:\n81015 74644\n\nYa WhatsApp par message bhejein.");
+}
+
+/* ========= APPOINTMENT SUBMIT ========= */
+function submitAppointment(e){
+  e.preventDefault();
+  const name = document.getElementById("appName").value;
+  const phone = document.getElementById("appPhone").value;
+  const bhk = document.getElementById("appBhk").value;
+  const purpose = document.getElementById("appPurpose").value;
+
+  const msg = `Hello Siliguri Rentals!%0A%0A` +
+    `Name: ${name}%0A` +
+    `Phone: ${phone}%0A` +
+    `BHK: ${bhk}%0A` +
+    `Purpose: ${purpose}%0A%0A` +
+    `Please confirm my appointment.`;
+
+  window.open(`https://wa.me/918101574644?text=${msg}`, "_blank");
+  alert("✅ Thank you " + name + "!\n\nAapki appointment request bhej di gayi hai.\nHum aapko 30 minutes mein call karenge.\n\n📞 81015 74644");
+  e.target.reset();
+}
+
+/* ========= MOBILE MENU ========= */
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+menuBtn.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+  menuBtn.innerHTML = navbar.classList.contains("active") 
+    ? '<i class="fa-solid fa-xmark"></i>' 
+    : '<i class="fa-solid fa-bars"></i>';
+});
+
+/* Close menu on link click */
+document.querySelectorAll(".navbar a").forEach(a => {
+  a.addEventListener("click", () => {
+    navbar.classList.remove("active");
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  });
+});
+
+/* ========= ACTIVE LINK ON SCROLL ========= */
+window.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section[id]");
+  const scrollY = window.pageYOffset + 150;
+  sections.forEach(sec => {
+    const top = sec.offsetTop;
+    const h = sec.offsetHeight;
+    const id = sec.getAttribute("id");
+    const link = document.querySelector(`.navbar a[href="#${id}"]`);
+    if(link){
+      if(scrollY >= top && scrollY < top + h){
+        document.querySelectorAll(".navbar a").forEach(a => a.classList.remove("active"));
+        link.classList.add("active");
+      }
+    }
+  });
+
+  /* Scroll top button */
+  const st = document.getElementById("scrollTop");
+  if(window.pageYOffset > 400) st.classList.add("show");
+  else st.classList.remove("show");
+});
+
+/* ========= INIT ========= */
+renderProperties();
+
+/* ========= SET MIN DATE ========= */
+document.getElementById("appDate").min = new Date().toISOString().split("T")[0];
+</script>
+
+</body>
+</html>
